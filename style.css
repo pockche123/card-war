@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&family=Ultra&display=swap');
+
+:root {
+    --mainfont: Segoe UI;
+    --grey: #ccc;
+    --shadow: 5px 5px 8px #333;
+}
+
+html {
+    font-family: 'Playpen Sans', cursive;
+}
+
+body {
+    text-align: center;
+    background-color: cadetblue;
+    /* background-color: #FAF9F6; */
+}
+
+header {
+    margin: 5% 0 50px 0;
+    color: black;
+    font-size: 2rem;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.playertitle {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.score {
+    color: black;
+    font-weight: bold;
+}
+
+.score::before {
+    content: "Score: ";
+    font-weight: 400;
+}
+
+.winpointer {
+    color: black;
+}
+
+.card {
+    margin: auto;
+    text-align: center;
+    background: white;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    width: 200px;
+    height: 320px;
+}
+
+.topcard {
+    text-align: left;
+    margin: 20px 0 0 25px;
+    font-size: 1.1rem;
+}
+
+.middlecard {
+    font-size: 6rem;
+    margin-top: 40px;
+}
+
+#mainbtn {
+    margin-top: 40%;
+    font-family: 'Playpen Sans', cursive;
+    padding: 15px 20px;
+    font-weight: bold;
+    background: white;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    font-size: 1rem;
+    transition: 100ms;
+}
+
+#mainbtn:hover {
+    cursor: pointer;
+}

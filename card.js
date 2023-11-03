@@ -136,21 +136,6 @@ function lotocards() {
     document.getElementById("dealerscore").innerHTML = dealerscore;
     document.getElementById("userscore").innerHTML = userscore;        
 
-    // Display Turns:
-    let dealerturns = "";
-    let i;
-    for(i = 0; i < dealersTurn.length; i++) {
-        dealerturns = dealerturns + dealersTurn[i] + ", ";
-        document.getElementById("dealerturns").innerHTML = dealerturns
-    }
-
-    let userturns = "";
-    let j;
-    for(j = 0; j < usersTurn.length; j++) {
-        userturns = userturns + usersTurn[j] + ", ";
-        document.getElementById("userturns").innerHTML = userturns
-    }
-
     checkingscores();
 }
 
